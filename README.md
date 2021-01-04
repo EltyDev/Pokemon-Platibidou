@@ -8,5 +8,5 @@ Cette Rom-Hack se basant sur [Pokémon Platine](https://fr.wikipedia.org/wiki/Po
 
  - Implémentation du type fée
  - Hausse de la difficulté et de la courbe d'expérience
- - Modification du scénario 
-
+ - Modification du scénario principal et du post-game
+ ...
