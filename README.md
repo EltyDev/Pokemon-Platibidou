@@ -13,7 +13,7 @@ Cette Rom-Hack se basant sur [Pokémon Platine](https://fr.wikipedia.org/wiki/Po
  
  ## Avancement
  
-⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 1%
+▂▁▁▁▁▁▁▁▁▁▁▁▁ 1%
 
  
 
