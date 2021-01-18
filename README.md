@@ -16,4 +16,4 @@ Cette Rom-Hack se basant sur [Pokémon Platine](https://fr.wikipedia.org/wiki/Po
 ▂▁▁▁▁▁▁▁▁▁▁▁▁ 1%
 
  
-
+http://translate.google.com/translate?depth=1&pto=aue,boq&rurl=translate.google.com&sl=es&sp=nmt4&tl=en&u=https://whackahack.com/foro/threads/pt-en-editar-la-efectividad-entre-tipos-e-insertar-el-tipo-hada-compatible-con-pokeplat.57163/
