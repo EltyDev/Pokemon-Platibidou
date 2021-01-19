@@ -18,3 +18,4 @@ Cette Rom-Hack se basant sur [Pokémon Platine](https://fr.wikipedia.org/wiki/Po
 ## Crédits
 
 Mikelan98, BagBoy: Fairy Type in Pokemon Platinum (pokehacking.com/r/20071800)
+Dyloubidou pour le scénario
