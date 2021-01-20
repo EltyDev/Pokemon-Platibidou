@@ -1,4 +1,6 @@
-# Pokemon-Platibidou 
+<p align="center"> 
+ <img src="https://i.ibb.co/31pCVgt/Plati-Bidou.png" alt="Plati-Bidou" border="0">
+</p>
 
  ## Principe
 
