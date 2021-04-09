@@ -1,5 +1,5 @@
 <p align="center"> 
- <img src="https://i.ibb.co/31pCVgt/Plati-Bidou.png" alt="Plati-Bidou" border="0">
+    <img src="https://i.ibb.co/PwzG4cC/Platibidou-V3.png" alt="Platibidou-V3" border="0">
 </p>
 
  ## Principe
