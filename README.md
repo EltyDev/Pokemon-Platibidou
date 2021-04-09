@@ -19,5 +19,4 @@ Cette Rom-Hack se basant sur [Pokémon Platine](https://fr.wikipedia.org/wiki/Po
 
 ## Crédits
 
-- Mikelan98 & BagBoy pour les recherches sur le [type fée dans Pokémon Platine](pokehacking.com/r/20071800)
 - Dyloubidou pour le scénario
