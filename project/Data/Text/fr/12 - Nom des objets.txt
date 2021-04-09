@@ -1,0 +1,921 @@
+0 : Aucun objet
+1 : Master Ball
+2 : Hyper Ball
+3 : Super Ball
+4 : Poké Ball
+5 : Safari Ball
+6 : Filet Ball
+7 : Scuba Ball
+8 : Faiblo Ball
+9 : Bis Ball
+10 : Chrono Ball
+11 : Luxe Ball
+12 : Honor Ball
+13 : Sombre Ball
+14 : Soin Ball
+15 : Rapide Ball
+16 : Mémoire Ball
+17 : Potion
+18 : Antidote
+19 : Anti-Brûle
+20 : Antigel
+21 : Réveil
+22 : Anti-Para
+23 : Guérison
+24 : Potion Max
+25 : Hyper Potion
+26 : Super Potion
+27 : Total Soin
+28 : Rappel
+29 : Rappel Max
+30 : Eau Fraîche
+31 : Soda Cool
+32 : Limonade
+33 : Lait Meumeu
+34 : Poudrénergie
+35 : Racinénergie
+36 : Poudre Soin
+37 : Herbe Rappel
+38 : Huile
+39 : Huile Max
+40 : Élixir
+41 : Max Élixir
+42 : Lava Cookie
+43 : Jus de Baie
+44 : Cendre Sacrée
+45 : PV Plus
+46 : Protéine
+47 : Fer
+48 : Carbone
+49 : Calcium
+50 : Super Bonbon
+51 : PP Plus
+52 : Zinc
+53 : PP Max
+54 : Vieux Gâteau
+55 : Défense Spéciale
+56 : Muscle +
+57 : Attaque +
+58 : Défense +
+59 : Vitesse +
+60 : Précision +
+61 : Spécial +
+62 : Déf. Spé. +
+63 : Poké Poupée
+64 : Queue Skitty
+65 : Flûte Bleue
+66 : Flûte Jaune
+67 : Flûte Rouge
+68 : Flûte Noire
+69 : Flûte Blanche
+70 : Sel Tréfonds
+71 : CoquilleTréfonds
+72 : Tesson Rouge
+73 : Tesson Bleu
+74 : Tesson Jaune
+75 : Tesson Vert
+76 : Super Repousse
+77 : Max Repousse
+78 : Corde Sortie
+79 : Repousse
+80 : Pierre Soleil
+81 : Pierre Lune
+82 : Pierre Feu
+83 : Pierre Foudre
+84 : Pierre Eau
+85 : Pierre Plante
+86 : Petit Champi
+87 : Gros Champi
+88 : Perle
+89 : Grande Perle
+90 : Poussière Étoile
+91 : Morceau d’Étoile
+92 : Pépite
+93 : Écaille Cœur
+94 : Miel
+95 : Fertipousse
+96 : Fertihumide
+97 : Fertistable
+98 : Fertiglu
+99 : Fossile Racine
+100 : Fossile Griffe
+101 : Nautile
+102 : Fossile Dôme
+103 : Vieil Ambre
+104 : Fossile Armure
+105 : Fossile Crâne
+106 : Os Rare
+107 : Pierre Éclat
+108 : Pierre Nuit
+109 : Pierre Aube
+110 : Pierre Ovale
+111 : Clé de Voûte
+112 : Orbe Platiné
+113 : ???
+114 : ???
+115 : ???
+116 : Module Aqua
+117 : Module Choc
+118 : Module Pyro
+119 : Module Cryo
+120 : ???
+121 : ???
+122 : ???
+123 : ???
+124 : ???
+125 : ???
+126 : ???
+127 : ???
+128 : ???
+129 : ???
+130 : ???
+131 : ???
+132 : ???
+133 : ???
+134 : Chococœur
+135 : Orbe Adamant
+136 : Orbe Perlé
+137 : Lettre Salut
+138 : Lettre Fan
+139 : Lettre Invit
+140 : Lettre Merci
+141 : Lettre Demande
+142 : Lettre Avis
+143 : Lettre Réponse
+144 : Lettre Pont S
+145 : Lettre Pont Y
+146 : Lettre Pont F
+147 : Lettre Pont H
+148 : Lettre Pont I
+149 : Baie Ceriz
+150 : Baie Maron
+151 : Baie Pêcha
+152 : Baie Fraive
+153 : Baie Willia
+154 : Baie Mepo
+155 : Baie Oran
+156 : Baie Kika
+157 : Baie Prine
+158 : Baie Sitrus
+159 : Baie Figuy
+160 : Baie Wiki
+161 : Baie Mago
+162 : Baie Gowav
+163 : Baie Papaya
+164 : Baie Framby
+165 : Baie Remu
+166 : Baie Nanab
+167 : Baie Repoi
+168 : Baie Nanana
+169 : Baie Grena
+170 : Baie Alga
+171 : Baie Qualot
+172 : Baie Lonme
+173 : Baie Résin
+174 : Baie Tamato
+175 : Baie Siam
+176 : Baie Mangou
+177 : Baie Rabuta
+178 : Baie Tronci
+179 : Baie Kiwan
+180 : Baie Palma
+181 : Baie Stekpa
+182 : Baie Durin
+183 : Baie Myrte
+184 : Baie Chocco
+185 : Baie Pocpoc
+186 : Baie Parma
+187 : Baie Ratam
+188 : Baie Nanone
+189 : Baie Pomroz
+190 : Baie Kébia
+191 : Baie Jouca
+192 : Baie Cobaba
+193 : Baie Yapap
+194 : Baie Panga
+195 : Baie Charti
+196 : Baie Sédra
+197 : Baie Fraigo
+198 : Baie Lampou
+199 : Baie Babiri
+200 : Baie Zalis
+201 : Baie Lichii
+202 : Baie Lingan
+203 : Baie Sailak
+204 : Baie Pitaye
+205 : Baie Abriko
+206 : Baie Lansat
+207 : Baie Frista
+208 : Baie Enigma
+209 : Baie Micle
+210 : Baie Chérim
+211 : Baie Jaboca
+212 : Baie Pommo
+213 : Poudre Claire
+214 : Herbe Blanche
+215 : Bracelet Macho
+216 : Multi Exp
+217 : Vive Griffe
+218 : Grelot Zen
+219 : Herbe Mental
+220 : Bandeau Choix
+221 : Roche Royale
+222 : Poudre Argentée
+223 : Pièce Rune
+224 : Rune Purifiante
+225 : Rosée Âme
+226 : Dent Océan
+227 : Écaille Océan
+228 : Boule Fumée
+229 : Pierre Stase
+230 : Bandeau
+231 : Œuf Chance
+232 : Lentilscope
+233 : Peau Métal
+234 : Restes
+235 : Écaille Draco
+236 : Balle Lumière
+237 : Sable Doux
+238 : Pierre Dure
+239 : Graine Miracle
+240 : Lunettes Noires
+241 : Ceinture Noire
+242 : Aimant
+243 : Eau Mystique
+244 : Bec Pointu
+245 : Pic Venin
+246 : Glace Éternelle
+247 : Rune Sort
+248 : Cuiller Tordue
+249 : Charbon
+250 : Croc Dragon
+251 : Mouchoir Soie
+252 : Améliorator
+253 : Grelot Coque
+254 : Encens Mer
+255 : Encens Doux
+256 : Poing Chance
+257 : Poudre Métal
+258 : Masse Os
+259 : Bâton
+260 : Foulard Rouge
+261 : Foulard Bleu
+262 : Foulard Rose
+263 : Foulard Vert
+264 : Foulard Jaune
+265 : Loupe
+266 : Bandeau Muscle
+267 : Lunettes Sages
+268 : Ceinture Pro
+269 : Lumargile
+270 : Orbe Vie
+271 : Herbe Pouvoir
+272 : Orbe Toxique
+273 : Orbe Flamme
+274 : Poudre Vite
+275 : Ceinture Force
+276 : Lentille Zoom
+277 : Métronome
+278 : Balle Fer
+279 : Ralentiqueue
+280 : Nœud Destin
+281 : Boue Noire
+282 : Roche Glace
+283 : Roche Lisse
+284 : Roche Chaude
+285 : Roche Humide
+286 : Accro Griffe
+287 : Mouchoir Choix
+288 : Piquants
+289 : Poignée Pouvoir
+290 : Ceinture Pouvoir
+291 : Lentille Pouvoir
+292 : Bandeau Pouvoir
+293 : Chaîne Pouvoir
+294 : Poids Pouvoir
+295 : Carapace Mue
+296 : Grosse Racine
+297 : Lunettes Choix
+298 : Plaque Flamme
+299 : Plaque Hydro
+300 : Plaque Volt
+301 : Plaque Herbe
+302 : Plaque Glace
+303 : Plaque Poing
+304 : Plaque Toxik
+305 : Plaque Terre
+306 : Plaque Ciel
+307 : Plaque Esprit
+308 : Plaque Insecte
+309 : Plaque Roc
+310 : Plaque Fantôme
+311 : Plaque Draco
+312 : Plaque Ombre
+313 : Plaque Fer
+314 : Encens Bizarre
+315 : Encens Roc
+316 : Encens Plein
+317 : Encens Vague
+318 : Encens Fleur
+319 : Encens Veine
+320 : Encens Pur
+321 : Protecteur
+322 : Électriseur
+323 : Magmariseur
+324 : CD Douteux
+325 : Tissu Fauche
+326 : Griffe Rasoir
+327 : Croc Rasoir
+328 : CT01
+329 : CT02
+330 : CT03
+331 : CT04
+332 : CT05
+333 : CT06
+334 : CT07
+335 : CT08
+336 : CT09
+337 : CT10
+338 : CT11
+339 : CT12
+340 : CT13
+341 : CT14
+342 : CT15
+343 : CT16
+344 : CT17
+345 : CT18
+346 : CT19
+347 : CT20
+348 : CT21
+349 : CT22
+350 : CT23
+351 : CT24
+352 : CT25
+353 : CT26
+354 : CT27
+355 : CT28
+356 : CT29
+357 : CT30
+358 : CT31
+359 : CT32
+360 : CT33
+361 : CT34
+362 : CT35
+363 : CT36
+364 : CT37
+365 : CT38
+366 : CT39
+367 : CT40
+368 : CT41
+369 : CT42
+370 : CT43
+371 : CT44
+372 : CT45
+373 : CT46
+374 : CT47
+375 : CT48
+376 : CT49
+377 : CT50
+378 : CT51
+379 : CT52
+380 : CT53
+381 : CT54
+382 : CT55
+383 : CT56
+384 : CT57
+385 : CT58
+386 : CT59
+387 : CT60
+388 : CT61
+389 : CT62
+390 : CT63
+391 : CT64
+392 : CT65
+393 : CT66
+394 : CT67
+395 : CT68
+396 : CT69
+397 : CT70
+398 : CT71
+399 : CT72
+400 : CT73
+401 : CT74
+402 : CT75
+403 : CT76
+404 : CT77
+405 : CT78
+406 : CT79
+407 : CT80
+408 : CT81
+409 : CT82
+410 : CT83
+411 : CT84
+412 : CT85
+413 : CT86
+414 : CT87
+415 : CT88
+416 : CT89
+417 : CT90
+418 : CT91
+419 : CT92
+420 : CS01
+421 : CS02
+422 : CS03
+423 : CS04
+424 : CS05
+425 : CS06
+426 : ???
+427 : ???
+428 : Explorakit
+429 : Sac Butin
+430 : Livre Règles
+431 : Poké Radar
+432 : Carte Points
+433 : Journal
+434 : Boîte Sceaux
+435 : Coffret Mode
+436 : Sac Sceaux
+437 : Registre Ami
+438 : Clé Centrale
+439 : Vieux Grigri
+440 : Clé Galaxie
+441 : Chaîne Rouge
+442 : Carte
+443 : Cherche VS
+444 : Boîte Jetons
+445 : Canne
+446 : Super Canne
+447 : Méga Canne
+448 : Kwakarrosoir
+449 : Boîte Poffin
+450 : Bicyclette
+451 : Clé Chambre
+452 : Lettre Chen
+453 : Lun’Aile
+454 : Carte Membre
+455 : Flûte Azur
+456 : Passe Bateau
+457 : Passe Concours
+458 : Pierre Magma
+459 : Colis
+460 : Bon 1
+461 : Bon 2
+462 : Bon 3
+463 : Clé Stockage
+464 : Potion Secrète
+465 : Magnéto VS
+466 : Gracidée
+467 : Clé Secrète
+468 : Boîte Noigrume
+469 : Carnet Zarbi
+470 : Plante-Baies
+471 : Cherch’Objet
+472 : Carte Bleue
+473 : Queue Ramoloss
+474 : Glas Transparent
+475 : Carte Magnétique
+476 : Clé Sous-Sol
+477 : Carapuce à O
+478 : Écaillerouge
+479 : Objet perdu
+480 : Passe Train
+481 : Partie Machine
+482 : Argent’Aile
+483 : Arc-en-Ci’Aile
+484 : Œuf Mystère
+485 : Noigrume Rouge
+486 : Noigrume Bleu
+487 : Noigrume Jaune
+488 : Noigrume Vert
+489 : Noigrume Rose
+490 : Noigrume Blanc
+491 : Noigrume Noir
+492 : Speed Ball
+493 : Niveau Ball
+494 : Appât Ball
+495 : Masse Ball
+496 : Love Ball
+497 : Copain Ball
+498 : Lune Ball
+499 : Compét’Ball
+500 : Parc Ball
+501 : Album Photo
+502 : Lecteur GB
+503 : Glas Tempête
+504 : Bonbon Rage
+505 : Carte Mémo01
+506 : Carte Mémo02
+507 : Carte Mémo03
+508 : Carte Mémo04
+509 : Carte Mémo05
+510 : Carte Mémo06
+511 : Carte Mémo07
+512 : Carte Mémo08
+513 : Carte Mémo09
+514 : Carte Mémo10
+515 : Carte Mémo11
+516 : Carte Mémo12
+517 : Carte Mémo13
+518 : Carte Mémo14
+519 : Carte Mémo15
+520 : Carte Mémo16
+521 : Carte Mémo17
+522 : Carte Mémo18
+523 : Carte Mémo19
+524 : Carte Mémo20
+525 : Carte Mémo21
+526 : Carte Mémo22
+527 : Carte Mémo23
+528 : Carte Mémo24
+529 : Carte Mémo25
+530 : Carte Mémo26
+531 : Carte Mémo27
+532 : Orbe Vert
+533 : Poké Écrin
+534 : Gemme Rouge
+535 : Gemme Bleue
+536 : Mystécristal
+537 : Bel’Écaille
+538 : Évoluroc
+539 : Pierrallégée
+540 : Casque Brut
+541 : Ballon
+542 : Carton Rouge
+543 : Point de Mire
+544 : Bande Étreinte
+545 : Bulbe
+546 : Pile
+547 : Bouton Fuite
+548 : Joyau Feu
+549 : Joyau Eau
+550 : Joyau Électrik
+551 : Joyau Plante
+552 : Joyau Glace
+553 : Joyau Combat
+554 : Joyau Poison
+555 : Joyau Sol
+556 : Joyau Vol
+557 : Joyau Psy
+558 : Joyau Insecte
+559 : Joyau Roche
+560 : Joyau Spectre
+561 : Joyau Dragon
+562 : Joyau Ténèbres
+563 : Joyau Acier
+564 : Joyau Normal
+565 : Aile Santé
+566 : Aile Force
+567 : Aile Armure
+568 : Aile Esprit
+569 : Aile Mental
+570 : Aile Sprint
+571 : Jolie Aile
+572 : Fossile Plaque
+573 : Fossile Plume
+574 : Passe Liberté
+575 : Offrisphère
+576 : Rêve Ball
+577 : Poké Plumet
+578 : Boîte Parure
+579 : Crâne Dragon
+580 : Champi Suave
+581 : Maxi Pépite
+582 : Perle Triple
+583 : Morceau Comète
+584 : Vieux Sou
+585 : Vieil Écu
+586 : Vieux Ducat
+587 : Vieux Vase
+588 : Vieux Bijou
+589 : Vieux Santon
+590 : Vieux Tortil
+591 : Glace Volute
+592 : Muscle 2
+593 : Vitesse 2
+594 : Atq. Spé. 2
+595 : Déf. Spé. 2
+596 : Défense 2
+597 : Attaque 2
+598 : Précision 2
+599 : Vitesse 3
+600 : Atq. Spé. 3
+601 : Déf. Spé. 3
+602 : Défense 3
+603 : Attaque 3
+604 : Précision 3
+605 : Vitesse 6
+606 : Atq. Spé. 6
+607 : Déf. Spé. 6
+608 : Défense 6
+609 : Attaque 6
+610 : Précision 6
+611 : Appel Talent
+612 : Jette Objet
+613 : Appel Objet
+614 : Réamorçage
+615 : Muscle 3
+616 : Galet Blanc
+617 : Galet Noir
+618 : CT93
+619 : CT94
+620 : CT95
+621 : Vokit
+622 : ???
+623 : Courrier 1
+624 : Courrier 2
+625 : Courrier 3
+626 : Vokit
+627 : Boîte Médailles
+628 : Pointeau ADN
+629 : Pointeau ADN
+630 : Permis
+631 : Charme Ovale
+632 : Charme Chroma
+633 : Carte Plasma
+634 : Mouchoir Sale
+635 : Nikodule
+636 : Objet Trouvé
+637 : Objet Trouvé
+638 : Miroir Sacré
+639 : Vulné-Assurance
+640 : Veste de Combat
+641 : Holokit
+642 : Lettre du Prof
+643 : Rollers
+644 : Plaque Pixie
+645 : Pilule Talent
+646 : Chantibonbon
+647 : Sachet Senteur
+648 : Lichen Lumineux
+649 : Boule de Neige
+650 : Lunettes Filtre
+651 : Pokéflûte
+652 : Fertibondance
+653 : Fertistantané
+654 : Fertibérance
+655 : Fertiprodige
+656 : Ectoplasmite
+657 : Gardevoirite
+658 : Pharampite
+659 : Florizarrite
+660 : Dracaufite X
+661 : Tortankite
+662 : Mewtwoïte X
+663 : Mewtwoïte Y
+664 : Braségalite
+665 : Charminite
+666 : Démolossite
+667 : Galekingite
+668 : Branettite
+669 : Tyranocivite
+670 : Cizayoxite
+671 : Scarabruite
+672 : Ptéraïte
+673 : Lucarite
+674 : Blizzarite
+675 : Kangourexite
+676 : Léviatorite
+677 : Absolite
+678 : Dracaufite Y
+679 : Alakazamite
+680 : Scarhinoïte
+681 : Mysdibulite
+682 : Élecsprintite
+683 : Carchacrokite
+684 : Latiasite
+685 : Latiosite
+686 : Baie Selro
+687 : Baie Éka
+688 : Baie Rangma
+689 : Nénurrosoir
+690 : CT96
+691 : CT97
+692 : CT98
+693 : CT99
+694 : CT100
+695 : Passe Centrale
+696 : Méga-Anneau
+697 : Pierre Insolite
+698 : Pierre Ordinaire
+699 : Bon Réduction
+700 : Clé Ascenseur
+701 : Passe TMV
+702 : Insigne de Kalos
+703 : ABC Aventure
+704 : Bibelot Bizarre
+705 : Boîte Lentilles
+706 : Trousse Beauté
+707 : Malle Penderie
+708 : Galette Illumis
+709 : Sablé Yantreizh
+710 : Fossile Mâchoire
+711 : Fossile Nageoire
+712 : Ticket Beladonis
+713 : Bicyclette
+714 : Holokit
+715 : Joyau Fée
+716 : Méga-Charme
+717 : Méga-Gant
+718 : Vélo de Course
+719 : Vélo Cross
+720 : Wailmerrosoir
+721 : Pack Devon
+722 : Sac à Suie
+723 : Clé Sous-Sol
+724 : Kit Pokébloc
+725 : Lettre à Pierre
+726 : Passe Éon
+727 : Scanner
+728 : Lunettes Sable
+729 : Météorite
+730 : Clé Salle 1
+731 : Clé Salle 2
+732 : Clé Salle 4
+733 : Clé Salle 6
+734 : Clé Stockage
+735 : Devon Scope
+736 : Passe Bateau
+737 : CS07
+738 : Plongeur Devon
+739 : Costume Live
+740 : Robe Live
+741 : Scaph. Magma
+742 : Scaphandre Aqua
+743 : Ticket Duo
+744 : Méga-Bracelet
+745 : Méga-Pendentif
+746 : Méga-Lunettes
+747 : Méga-Ancre
+748 : Méga-Pin’s
+749 : Méga-Tiare
+750 : Méga-Grève
+751 : Météorite
+752 : Laggronite
+753 : Jungkite
+754 : Ténéfixite
+755 : Altarite
+756 : Gallamite
+757 : Nanméouïte
+758 : Métalossite
+759 : Sharpedite
+760 : Flagadossite
+761 : Steelixite
+762 : Roucarnagite
+763 : Oniglalite
+764 : Diancite
+765 : Vase Scellé
+766 : Méga-Manchette
+767 : Caméruptite
+768 : Lockpinite
+769 : Drattakite
+770 : Dardargnite
+771 : Météorite
+772 : Météorite
+773 : Gemme Sésame
+774 : Éclat Météorite
+775 : Flûte Éon
+776 : Normazélite
+777 : Pyrozélite
+778 : Aquazélite
+779 : Voltazélite
+780 : Florazélite
+781 : Cryozélite
+782 : Combazélite
+783 : Toxizélite
+784 : Terrazélite
+785 : Aérozélite
+786 : Psychézélite
+787 : Insectozélite
+788 : Rocazélite
+789 : Spectrozélite
+790 : Dracozélite
+791 : Ténébrozélite
+792 : Métallozélite
+793 : Nymphézélite
+794 : Pikazélite
+795 : Capsule d’Argent
+796 : Capsule d’Or
+797 : Bracelet Z
+798 : Archézélite
+799 : Félinozélite
+800 : Oratozélite
+801 : Tokozélite
+802 : Marshadozélite
+803 : Aloraïzélite
+804 : Ronflézélite
+805 : Évolizélite
+806 : Mewzélite
+807 : Normazélite
+808 : Pyrozélite
+809 : Aquazélite
+810 : Voltazélite
+811 : Florazélite
+812 : Cryozélite
+813 : Combazélite
+814 : Toxizélite
+815 : Terrazélite
+816 : Aérozélite
+817 : Psychézélite
+818 : Insectozélite
+819 : Rocazélite
+820 : Spectrozélite
+821 : Dracozélite
+822 : Ténébrozélite
+823 : Métallozélite
+824 : Nymphézélite
+825 : Pikazélite
+826 : Archézélite
+827 : Félinozélite
+828 : Oratozélite
+829 : Tokozélite
+830 : Marshadozélite
+831 : Aloraïzélite
+832 : Ronflézélite
+833 : Évolizélite
+834 : Mewzélite
+835 : Pikachazélite
+836 : Pikachazélite
+837 : ???
+838 : ???
+839 : ???
+840 : ???
+841 : Sac Ingrédients
+842 : Canne à Pêche
+843 : Masque du Prof
+844 : Festicket
+845 : Gemme Lumière
+846 : Orbe Frousse
+847 : Boîte Zygarde
+848 : ???
+849 : Pierre Glace
+850 : Appel-Monture
+851 : Ultra Ball
+852 : Malasada Maxi
+853 : Nectar Rouge
+854 : Nectar Jaune
+855 : Nectar Rose
+856 : Nectar Mauve
+857 : Flûte du Soleil
+858 : Flûte de la Lune
+859 : ???
+860 : Message Mystère
+861 : ???
+862 : ???
+863 : ???
+864 : ???
+865 : ???
+866 : ???
+867 : ???
+868 : ???
+869 : ???
+870 : ???
+871 : ???
+872 : ???
+873 : ???
+874 : ???
+875 : ???
+876 : ???
+877 : ???
+878 : ???
+879 : Champ’Duit
+880 : Pare-Effet
+881 : Graine Électrik
+882 : Graine Psychique
+883 : Graine Brume
+884 : Graine Herbe
+885 : ???
+886 : ???
+887 : ???
+888 : ???
+889 : ???
+890 : ???
+891 : ???
+892 : ???
+893 : ???
+894 : ???
+895 : ???
+896 : ???
+897 : ???
+898 : ???
+899 : ???
+900 : ???
+901 : ???
+902 : ???
+903 : ???
+904 : ROM Combat
+905 : ROM Vol
+906 : ROM Poison
+907 : ROM Sol
+908 : ROM Roche
+909 : ROM Insecte
+910 : ROM Spectre
+911 : ROM Acier
+912 : ROM Feu
+913 : ROM Eau
+914 : ROM Plante
+915 : ROM Électrik
+916 : ROM Psy
+917 : ROM Glace
+918 : ROM Dragon
+919 : ROM Ténèbres
+920 : ROM Fée

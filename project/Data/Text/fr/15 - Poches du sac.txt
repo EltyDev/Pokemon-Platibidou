@@ -1,0 +1,5 @@
+0 : Objets
+1 : PV/PP
+2 : CT & CS
+3 : Baies
+4 : Objets rares

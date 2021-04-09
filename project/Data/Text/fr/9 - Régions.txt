@@ -1,0 +1,11 @@
+0 : Échanges Link
+1 : Échanges Link
+2 : Kanto
+3 : Johto
+4 : Hoenn
+5 : Sinnoh
+6 : Pays lointain
+7 : －－－－－－－－－－
+8 : Unys
+9 : Kalos
+10 : Poké Lien

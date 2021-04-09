@@ -1,0 +1,7 @@
+0 : Quoi ? [VAR PKNICK(0000)] évolue !
+1 : Hein ? [VAR PKNICK(0000)] n’évolue plus !
+2 : Félicitations ! Votre [VAR PKNICK(0000)] évolue en [VAR PKNAME(0001)] !
+3 : Oublier une capacité
+4 : Garder les anciennes capacités
+5 : Renoncer à [VAR MOVE(0000)]
+6 : Ne pas renoncer à [VAR MOVE(0000)]

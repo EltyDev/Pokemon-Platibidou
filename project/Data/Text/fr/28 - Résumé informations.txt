@@ -1,0 +1,90 @@
+0 : [VAR COLOR(0002)]Hardi[VAR COLOR(0000)] de nature.
+1 : [VAR COLOR(0002)]Solo[VAR COLOR(0000)] de nature.
+2 : [VAR COLOR(0002)]Brave[VAR COLOR(0000)] de nature.
+3 : [VAR COLOR(0002)]Rigide[VAR COLOR(0000)] de nature.
+4 : [VAR COLOR(0002)]Mauvais[VAR COLOR(0000)] de nature.
+5 : [VAR COLOR(0002)]Assuré[VAR COLOR(0000)] de nature.
+6 : [VAR COLOR(0002)]Docile[VAR COLOR(0000)] de nature.
+7 : [VAR COLOR(0002)]Relax[VAR COLOR(0000)] de nature.
+8 : [VAR COLOR(0002)]Malin[VAR COLOR(0000)] de nature.
+9 : [VAR COLOR(0002)]Lâche[VAR COLOR(0000)] de nature.
+10 : [VAR COLOR(0002)]Timide[VAR COLOR(0000)] de nature.
+11 : [VAR COLOR(0002)]Pressé[VAR COLOR(0000)] de nature.
+12 : [VAR COLOR(0002)]Sérieux[VAR COLOR(0000)] de nature.
+13 : [VAR COLOR(0002)]Jovial[VAR COLOR(0000)] de nature.
+14 : [VAR COLOR(0002)]Naïf[VAR COLOR(0000)] de nature.
+15 : [VAR COLOR(0002)]Modeste[VAR COLOR(0000)] de nature.
+16 : [VAR COLOR(0002)]Doux[VAR COLOR(0000)] de nature.
+17 : [VAR COLOR(0002)]Discret[VAR COLOR(0000)] de nature.
+18 : [VAR COLOR(0002)]Pudique[VAR COLOR(0000)] de nature.
+19 : [VAR COLOR(0002)]Foufou[VAR COLOR(0000)] de nature.
+20 : [VAR COLOR(0002)]Calme[VAR COLOR(0000)] de nature.
+21 : [VAR COLOR(0002)]Gentil[VAR COLOR(0000)] de nature.
+22 : [VAR COLOR(0002)]Malpoli[VAR COLOR(0000)] de nature.
+23 : [VAR COLOR(0002)]Prudent[VAR COLOR(0000)] de nature.
+24 : [VAR COLOR(0002)]Bizarre[VAR COLOR(0000)] de nature.
+25 : Rencontré au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+26 : Apparemment rencontré au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+27 : Arrivé au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+28 : Apparemment arrivé au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+29 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+30 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Apparemment éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+31 : Œuf reçu le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+32 : Œuf reçu le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Apparemment éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+33 : Rencontré par la force du destin au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+34 : Apparemment rencontré par la force du destin au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+35 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Éclos par la force du destin le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+36 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Apparemment éclos par la force du destin le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+37 : Il a traversé le temps et l’espace pour parvenir jusqu’à vous. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+38 : Il a apparemment traversé le temps et l’espace pour parvenir jusqu’à vous. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+39 : Par la force du destin, il a traversé le temps et l’espace pour parvenir jusqu’à vous. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+40 : Par la force du destin, il a apparemment traversé le temps et l’espace pour parvenir jusqu’à vous. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+41 : [~ 41]
+42 : [~ 42]
+43 : [~ 43]
+44 : [~ 44]
+45 : Arrivé au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+46 : Apparemment arrivé au N. [VAR NUM3(0003)] le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+47 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+48 : Œuf trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)]. Apparemment éclos le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Lieu : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+49 : Adore manger.
+50 : S’assoupit souvent.
+51 : Dort beaucoup.
+52 : Éparpille des choses.
+53 : Aime se détendre.
+54 : Est fier de sa puissance.
+55 : Aime se démener.
+56 : Un peu coléreux.
+57 : Aime combattre.
+58 : S’emporte facilement.
+59 : Corps robuste.
+60 : Sait encaisser les coups.
+61 : Très obstiné.
+62 : Bonne endurance.
+63 : Persévérant.
+64 : Aime courir.
+65 : Attentif aux sons.
+66 : Bête et impulsif.
+67 : Aime faire le pitre.
+68 : Fuit rapidement.
+69 : Extrêmement curieux.
+70 : Coquin.
+71 : Très astucieux.
+72 : Souvent dans la lune.
+73 : Très particulier.
+74 : Très volontaire.
+75 : Un peu vaniteux.
+76 : Esprit rebelle.
+77 : A horreur de perdre.
+78 : Assez entêté.
+79 : Œuf de Pokémon mystérieux reçu le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+80 : Œuf de Pokémon mystérieux trouvé le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+81 : Œuf de Pokémon très mystérieux reçu le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+82 : Œuf de Pokémon très mystérieux trouvé le [VAR NUM2(0002)]/[VAR NUM2(0001)]/20[VAR NUM2(0000)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0004)][VAR COLOR(0000)].
+83 : [~ 83]
+84 : [~ 84]
+85 : Œuf de Pokémon mystérieux trouvé le [VAR NUM2(0007)]/[VAR NUM2(0006)]/20[VAR NUM2(0005)]. Provenance : [VAR COLOR(0002)][VAR LOCATION(0008)][VAR COLOR(0000)].
+86 : « Surveillance de l’Œuf » : Il fait du bruit. Il va éclore !
+87 : « Surveillance de l’Œuf » : Il bouge de temps en temps. Il devrait bientôt éclore.
+88 : « Surveillance de l’Œuf » : Qu’est-ce qui va en sortir ? Ça va mettre du temps.
+89 : « Surveillance de l’Œuf » : Cet Œuf va sûrement mettre du temps à éclore.

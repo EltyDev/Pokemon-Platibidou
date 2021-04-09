@@ -1,1 +1,0 @@
-./ndstool -c Pokemon-Platibidou.nds -9 ../rom_extracted/arm9.bin -7 ../rom_extracted/arm7.bin -y9 ../rom_extracted/overarm9.bin -y7 ../rom_extracted/overarm7.bin -d ../rom_extracted/root/ -y ../rom_extracted/overlay/ -t ../rom_extracted/banner.bin -h ../rom_extracted/header.bin 
