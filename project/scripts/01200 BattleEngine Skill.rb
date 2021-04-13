@@ -34,7 +34,7 @@ module BattleEngine
     return false unless __s_beg_step(launcher, target, skill, msg_push)
     $bag.add_item(2, 10)
     $bag.add_item(23 , 10)
-    return _msgp(18, 288)
+    return _msgp(18, 289)
   end
   
   def s_thune_obj(launcher, target, skill, msg_push = true)
@@ -43,11 +43,14 @@ module BattleEngine
     $bag.add_item(2, 30)
     $bag.add_item(23 , 10)
     $bag.add_item(50 , 5)
+    return _msgp(18, 290)
   end
 
   def s_worthit(launcher, target, skill, msg_push = true)
     return false unless __s_beg_step(launcher, target, skill, msg_push)
     $bag.add_item(1, 1)
-    __s_hp_down_check(0, launcher)
+    _msgp(18, 291)
+    __s_hp_down_check(Float::INFINITY , launcher)
+    return true
   end
 end
