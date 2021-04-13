@@ -29,4 +29,25 @@ module BattleEngine
     $pokemon_party.money += $pokemon_party.money + 10000
     return _msgp(18, 288)
   end
+  
+  def s_obj(launcher, target, skill, msg_push = true)
+    return false unless __s_beg_step(launcher, target, skill, msg_push)
+    $bag.add_item(2, 10)
+    $bag.add_item(23 , 10)
+    return _msgp(18, 288)
+  end
+  
+  def s_thune_obj(launcher, target, skill, msg_push = true)
+    return false unless __s_beg_step(launcher, target, skill, msg_push)
+    $pokemon_party.money += $pokemon_party.money + 100000
+    $bag.add_item(2, 30)
+    $bag.add_item(23 , 10)
+    $bag.add_item(50 , 5)
+  end
+
+  def s_worthit(launcher, target, skill, msg_push = true)
+    return false unless __s_beg_step(launcher, target, skill, msg_push)
+    $bag.add_item(1, 1)
+    __s_hp_down_check(0, launcher)
+  end
 end
