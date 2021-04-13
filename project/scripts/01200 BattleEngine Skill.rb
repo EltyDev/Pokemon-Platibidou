@@ -23,4 +23,10 @@ module BattleEngine
     _message_stack_push([:hp_up, target, hp])
     _message_stack_push([:msg, parse_text_with_pokemon(19, 387, target)])
   end
+
+  def s_thune(launcher, target, skill, msg_push = true)
+    return false unless __s_beg_step(launcher, target, skill, msg_push)
+    $pokemon_party.money += $pokemon_party.money + 10000
+    return _msgp(18, 288)
+  end
 end
