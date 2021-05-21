@@ -11,10 +11,13 @@ module Server
     def self.start()
         loop do
             Thread.start(SERVER.accept) do |client|
-                @players.push(JSON.parse(client.gets, object_class: Online::PlayerClient, create_additions: true))
-                puts @players[0].data.party
+                puts client.gets
             end
-        end    
+        end
+    end
+
+    def self.receive_data(data)
+        return JSON.parse(data)
     end
 end
 
