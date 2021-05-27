@@ -1,20 +1,19 @@
 require 'socket'
 require 'json'
 require 'thread'
-require_relative 'PlayerClient'
 
 module Online
+    include GameData::SystemTags
 
     @players = []
     @socket = nil
     @connected = false
-    @player = nil
+    @player = PlayerClient.new("Venodez", 1000, $game_player.x, $game_player.y, $game_map.map_id)
     IP = "127.0.0.1"
     PORT = 8888
     LOCK = Mutex.new
 
     def self.connect()
-        @player = PlayerClient.new("Venodez", 10000545, $pokemon_party.game_player.x, $pokemon_party.game_player.y, $pokemon_party.game_map.map_id)
         Thread.new do
             LOCK.synchronize do
                 Thread.main.wakeup
@@ -31,6 +30,7 @@ module Online
 
     def self.main_loop()
         log_info("Tentative de connexion.")
+        puts $game_system
         begin
             @socket = TCPSocket.new(IP, PORT)
         rescue
