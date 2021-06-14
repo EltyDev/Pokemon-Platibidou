@@ -9,7 +9,7 @@ module Online
     @player = nil
     @socket = nil
     @connected = false
-    IP = "127.0.0.1"
+    IP = "83.196.123.232"
     PORT = 8888
     LOCK = Mutex.new
 

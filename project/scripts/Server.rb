@@ -3,7 +3,7 @@ require 'json'
 require_relative 'PlayerClient'
 
 module Server
-    IP = '127.0.0.1'
+    IP = 'localhost'
     PORT = 8888
     SERVER = TCPServer.new(IP, PORT)
     @players = {}
