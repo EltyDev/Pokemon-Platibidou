@@ -31,6 +31,7 @@ class Game_Player < Game_Character
             super
             update_scroll_map(last_real_x, last_real_y)
             update_check_trigger(last_moving) unless moving? || @sliding
+            Online.update_position()
         else
             update_appearance(0)
         end
