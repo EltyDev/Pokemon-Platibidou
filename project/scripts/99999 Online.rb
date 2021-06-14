@@ -30,7 +30,6 @@ module Online
                 while @connected
                     data = self.receive_data()
                     unless data == nil
-                        puts data
                         self.handle_data(data)
                     end
                 end

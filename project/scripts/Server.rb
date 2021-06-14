@@ -15,7 +15,6 @@ module Server
                     data = self.receive_data(client)
                     if data == nil
                         @players.delete(client)
-                        puts @players
                         Thread.stop
                     else
                         self.handle_data(client, data)
