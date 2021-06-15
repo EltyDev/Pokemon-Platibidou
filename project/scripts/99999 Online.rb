@@ -97,15 +97,17 @@ module Online
                     $game_temp.player_transferring = true   
                 else
                     player_client = @players[player.uuid]
-                    case player.direction
-                    when 2
-                        player_client.turn_down()
-                    when 4
-                        player_client.turn_left()
-                    when 6
-                        player_client.turn_right()
-                    when 8
-                        player_client.turn_up()
+                    if player.direction != player_client.direction
+                        case player.direction
+                        when 2
+                            player_client.turn_down()
+                        when 4
+                            player_client.turn_left()
+                        when 6
+                            player_client.turn_right()
+                        when 8
+                            player_client.turn_up()
+                        end
                     end
                     if player.x != player_client.x
                         if player.x > player_client.x
