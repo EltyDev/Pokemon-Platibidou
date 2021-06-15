@@ -55,7 +55,9 @@ module Online
                 Thread.main.wakeup
                 data = Marshal.dump(data)
                 @socket.write([data.bytesize].pack("I") + data)
-            return true
+                return true
+            end
+        end
     rescue Exception
         return false
     end
