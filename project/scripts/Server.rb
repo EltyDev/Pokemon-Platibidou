@@ -7,6 +7,7 @@ module Server
     PORT = 8888
     SERVER = TCPServer.new(IP, PORT)
     @players = {}
+    @first = true
 
     def self.start()
         loop do
@@ -14,6 +15,7 @@ module Server
                 loop do
                     data = self.receive_data(client)
                     if data == nil
+                        self.log("Déconnexion", "", client=client)
                         @players.delete(client)
                         Thread.stop
                     else
@@ -51,10 +53,22 @@ module Server
         end
     end
 
+    def self.log(type, message, client)
+        puts "―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――" if @first
+        @first = false
+        if message == ""
+            puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid
+        else
+            puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid + " ==> " + message
+        end
+        puts "―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――"
+    end
+
     def self.handle_data(client, data)
         case data[:type]
         when "connection"
-            @players[client] = data[:value] 
+            @players[client] = data[:value]
+            self.log("Connexion", data[:value].to_s, client) 
         when "update_position"
             @players[client].x = data[:value][:x]
             @players[client].y = data[:value][:y]
@@ -62,10 +76,8 @@ module Server
             @players[client].pattern = data[:value][:pattern]
             @players[client].map_id = data[:value][:map_id]
             self.update_all_positions()
-        else
-            puts "Error: Unknown Data => " + data.to_s
+            self.log("Informations", data[:value].to_s, client)
         end
-        puts @players
     end
 end
 

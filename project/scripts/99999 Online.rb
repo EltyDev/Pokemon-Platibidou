@@ -5,7 +5,7 @@ module Online
 
     attr_reader :connected
 
-    @players = []
+    @players = {}
     @player = nil
     @socket = nil
     @connected = false
@@ -17,7 +17,7 @@ module Online
         unless @connected
             @socket = TCPSocket.new(IP,PORT)
             @connected = true
-            @player = PlayerClient.new("Venodez", $game_player.x, $game_player.y, $game_player.direction, $game_player.pattern, $game_map.map_id)
+            @player = PlayerClient.new($pokemon_party.trainer.name, $game_player.x, $game_player.y, $game_player.direction, $game_player.pattern, $game_map.map_id)
             self.send_data({"type": "connection", "value": @player})
             self.main_loop()
         end
@@ -27,12 +27,15 @@ module Online
         Thread.new do
             LOCK.synchronize do
                 Thread.main.wakeup
+                log_info("Connexion réussi")
                 while @connected
+                    @connected = false if @socket.closed?
                     data = self.receive_data()
                     unless data == nil
                         self.handle_data(data)
                     end
                 end
+                log_info("Connexion interrompu")
                 Thread.main.wakeup
             end
         end
@@ -69,11 +72,6 @@ module Online
         return nil
     end
 
-    def self.server_is_online?()
-        return @socket.gets != nil
-    end
-
-
     def self.has_moved?()
         return false unless @connected
         return $game_player.x != @player.x || $game_player.y != @player.y || $game_player.direction != @player.direction
@@ -91,7 +89,17 @@ module Online
     def self.handle_data(data)
         case data[:type]
         when "update_position"
-            @players = data[:value]
+            data[:value].each |player| do
+                if !@players.has_key(player.uuid)
+                    @players[player] = event = Pokemon_Event.new(player.map_id, player.x, player.y, $actors[0])
+                    $game_temp.player_new_x = $game_player.x
+                    $game_temp.player_new_y = $game_player.y
+                    $game_temp.player_transferring = true   
+                else
+                    @players[player.uuid].set_appearance("cynthia_hgss"; player.direction)
+                    @players[player.uuid].moveto(player.x, player.y)
+                end
+            end
         else
             log_info("Error: Unknown Data => " + data.to_s)
         end

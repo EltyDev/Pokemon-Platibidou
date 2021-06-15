@@ -24,7 +24,6 @@ module UI
             if @real_index >= 7
                 @real_index = real_index + 1
             end
-            log_info(@real_index)
             @real_index = 7 if real_index == 2 && $trainer.playing_girl
             @selected = false
             add_background('menu_button')
