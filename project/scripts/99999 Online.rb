@@ -115,9 +115,9 @@ module Online
                         end
                     elsif player.y != player_client.y
                         if player.y > player_client.y
-                            player_client.move_up()
-                        else
                             player_client.move_down()
+                        else
+                            player_client.move_up()
                         end
                     end
                 end
