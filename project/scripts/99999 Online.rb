@@ -97,6 +97,16 @@ module Online
                     $game_temp.player_transferring = true   
                 else
                     @players[player.uuid].set_appearance("cynthia_hgss", player.direction)
+                    case player.direction
+                    when 2
+                        @player[player.uuid].turn_down()
+                    when 4
+                        @player[player.uuid].turn_left()
+                    when 6
+                        @player[player.uuid].turn_right()
+                    when 8
+                        @players[player.uuid].turn_up()
+                    end
                     @players[player.uuid].moveto(player.x, player.y)
                 end
             end
