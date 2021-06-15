@@ -96,7 +96,7 @@ module Online
                     $game_temp.player_new_y = $game_player.y
                     $game_temp.player_transferring = true   
                 else
-                    @players[player.uuid].set_appearance("cynthia_hgss"; player.direction)
+                    @players[player.uuid].set_appearance("cynthia_hgss", player.direction)
                     @players[player.uuid].moveto(player.x, player.y)
                 end
             end
