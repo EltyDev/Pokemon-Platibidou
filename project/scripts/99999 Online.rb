@@ -50,14 +50,9 @@ module Online
 
 
     def self.send_data(data)
-        Thread.new do
-            LOCK.synchronize do
-                Thread.main.wakeup
-                data = Marshal.dump(data)
-                @socket.write([data.bytesize].pack("I") + data)
-                return true
-            end
-        end
+        data = Marshal.dump(data)
+        @socket.write([data.bytesize].pack("I") + data)
+        return true
     rescue Exception
         return false
     end
@@ -92,43 +87,49 @@ module Online
     end
 
     def self.handle_data(data)
-        case data[:type]
-        when "update_position"
-            data[:value].each do |player| 
-                if !@players.has_key?(player.uuid)
-                    @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    $game_temp.player_new_x = $game_player.x
-                    $game_temp.player_new_y = $game_player.y
-                    $game_temp.player_transferring = true   
+        Thread.new do
+            LOCK.synchronize do
+                Thread.main.wakeup
+                case data[:type]
+                when "update_position"
+                    data[:value].each do |player| 
+                        if !@players.has_key?(player.uuid)
+                            @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
+                            $game_temp.player_new_x = $game_player.x
+                            $game_temp.player_new_y = $game_player.y
+                            $game_temp.player_transferring = true   
+                        else
+                            player_client = @players[player.uuid]
+                            case player.direction
+                            when 2
+                                player_client.turn_down()
+                            when 4
+                                player_client.turn_left()
+                            when 6
+                                player_client.turn_right()
+                            when 8
+                                player_client.turn_up()
+                            end
+                            if player.x != player_client.x
+                                if player.x > player_client.x
+                                    player_client.move_right()
+                                else
+                                    player_client.move_left()
+                                end
+                            elsif player.y != player_client.y
+                                if player.y > player_client.y
+                                    player_client.move_down()
+                                else
+                                    player_client.move_up()
+                                end
+                            end
+                        end
+                    end
                 else
-                    player_client = @players[player.uuid]
-                    case player.direction
-                    when 2
-                        player_client.turn_down()
-                    when 4
-                        player_client.turn_left()
-                    when 6
-                        player_client.turn_right()
-                    when 8
-                        player_client.turn_up()
-                    end
-                    if player.x != player_client.x
-                        if player.x > player_client.x
-                            player_client.move_right()
-                        else
-                            player_client.move_left()
-                        end
-                    elsif player.y != player_client.y
-                        if player.y > player_client.y
-                            player_client.move_down()
-                        else
-                            player_client.move_up()
-                        end
-                    end
+                    log_info("Error: Unknown Data => " + data.to_s)
                 end
+                Thread.main.wakeup
             end
-        else
-            log_info("Error: Unknown Data => " + data.to_s)
         end
     end
 end
