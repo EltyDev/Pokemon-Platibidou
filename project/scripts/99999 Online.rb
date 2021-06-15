@@ -32,9 +32,7 @@ module Online
                     @connected = false if @socket.closed?
                     data = self.receive_data()
                     unless data == nil
-                        Thread.new do
-                            self.handle_data(data)
-                        end
+                        self.handle_data(data)
                     end
                 end
                 log_info("Connexion interrompu")
