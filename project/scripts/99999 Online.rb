@@ -50,9 +50,12 @@ module Online
 
 
     def self.send_data(data)
-        data = Marshal.dump(data)
-        @socket.write([data.bytesize].pack("I") + data)
-        return true
+        Thread.new do
+            LOCK.synchronize do
+                Thread.main.wakeup
+                data = Marshal.dump(data)
+                @socket.write([data.bytesize].pack("I") + data)
+            return true
     rescue Exception
         return false
     end
