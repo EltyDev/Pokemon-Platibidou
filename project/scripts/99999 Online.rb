@@ -104,7 +104,7 @@ module Online
                     when 6
                         @players[player.uuid].turn_right()
                     when 8
-                        @playerss[player.uuid].turn_up()
+                        @players[player.uuid].turn_up()
                     end
                     @players[player.uuid].moveto(player.x, player.y)
                 end
