@@ -91,7 +91,7 @@ module Online
         when "update_position"
             data[:value].each do |player| 
                 if !@players.has_key?(player.uuid)
-                    @players[player] = event = Pokemon_Event.new(player.map_id, player.x, player.y, $actors[0])
+                    @players[player] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
                     $game_temp.player_new_x = $game_player.x
                     $game_temp.player_new_y = $game_player.y
                     $game_temp.player_transferring = true   
