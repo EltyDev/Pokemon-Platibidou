@@ -90,7 +90,7 @@ module Online
         case data[:type]
         when "update_position"
             data[:value].each do |player| 
-                if !@players.has_key(player.uuid)
+                if !@players.has_key?(player.uuid)
                     @players[player] = event = Pokemon_Event.new(player.map_id, player.x, player.y, $actors[0])
                     $game_temp.player_new_x = $game_player.x
                     $game_temp.player_new_y = $game_player.y
