@@ -96,17 +96,30 @@ module Online
                     $game_temp.player_new_y = $game_player.y
                     $game_temp.player_transferring = true   
                 else
+                    player_client = @players[player.uuid]
                     case player.direction
                     when 2
-                        @players[player.uuid].turn_down()
+                        player_client.turn_down()
                     when 4
-                        @players[player.uuid].turn_left()
+                        player_client.turn_left()
                     when 6
-                        @players[player.uuid].turn_right()
+                        player_client.turn_right()
                     when 8
-                        @players[player.uuid].turn_up()
+                        player_client.turn_up()
                     end
-                    @players[player.uuid].moveto(player.x, player.y)
+                    if player.x != player_client.x
+                        if player.x > player_client.x
+                            player_client.move_right()
+                        else
+                            player_client.move_left()
+                        end
+                    elsif player.y != player_client.y
+                        if player.y > player_client.y
+                            player_client.move_up()
+                        else
+                            player_client.move_down()
+                        end
+                    end
                 end
             end
         else
