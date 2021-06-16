@@ -25,19 +25,19 @@ module Online
 
     def self.main_loop()
         Thread.new do
-            LOCK.synchronize do
-                Thread.main.wakeup
-                log_info("Connexion réussi")
-                while @connected
+            log_info("Connexion réussi")
+            while @connected
+                LOCK.synchronize do
+                    Thread.main.wakeup
                     @connected = false if @socket.closed?
                     data = self.receive_data()
                     unless data == nil
                         self.handle_data(data)
                     end
+                    Thread.main.wakeup
                 end
-                log_info("Connexion interrompu")
-                Thread.main.wakeup
             end
+            log_info("Connexion interrompu")
         end
         sleep unless LOCK.locked? || !@connected 
     end
