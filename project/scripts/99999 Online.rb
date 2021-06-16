@@ -74,7 +74,7 @@ module Online
 
     def self.has_moved?()
         return false unless @connected
-        return $game_player.x != @player.x || $game_player.y != @player.y || $game_player.direction != @player.direction
+        return $game_player.x != @player.x || $game_player.y != @player.y || $game_player.direction != @player.direction || $game_map.map_id != @player.map_id
     end
 
     def self.update_position()
@@ -84,6 +84,12 @@ module Online
         @player.y = $game_player.y
         @player.direction = $game_player.direction
         @player.pattern = $game_player.pattern
+        if $game_map.map_id != @player.map_id
+            @player.map_id = $game_map.map_id
+            $game_temp.player_new_x = $game_player.x
+            $game_temp.player_new_y = $game_player.y
+            $game_temp.player_transferring = true  
+        end
     end
 
     def self.handle_data(data)
@@ -100,7 +106,6 @@ module Online
                     if player.map_id != player_client.map_id
                         player_client.erase()
                         @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                        
                     end
                     if player.direction != player_client.direction
                         case player.direction
