@@ -97,6 +97,11 @@ module Online
                     $game_temp.player_transferring = true   
                 else
                     player_client = @players[player.uuid]
+                    if player.map_id != player_client.map_id
+                        player_client.erase()
+                        @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
+                        
+                    end
                     if player.direction != player_client.direction
                         case player.direction
                         when 2
