@@ -95,41 +95,43 @@ module Online
     def self.handle_data(data)
         case data[:type]
         when "update_position"
-            data[:value].each do |player| 
-                if !@players.has_key?(player.uuid)
-                    @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    $game_temp.player_new_x = $game_player.x
-                    $game_temp.player_new_y = $game_player.y
-                    $game_temp.player_transferring = true   
-                else
-                    player_client = @players[player.uuid]
-                    if player.map_id != player_client.map_id
-                        player_client.erase()
+            data[:value].each do |player|
+                Thread.new do 
+                    if !@players.has_key?(player.uuid)
                         @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    end
-                    if player.direction != player_client.direction
-                        case player.direction
-                        when 2
-                            player_client.turn_down()
-                        when 4
-                            player_client.turn_left()
-                        when 6
-                            player_client.turn_right()
-                        when 8
-                            player_client.turn_up()
+                        $game_temp.player_new_x = $game_player.x
+                        $game_temp.player_new_y = $game_player.y
+                        $game_temp.player_transferring = true   
+                    else
+                        player_client = @players[player.uuid]
+                        if player.map_id != player_client.map_id
+                            player_client.erase()
+                            @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
                         end
-                    end
-                    if player.x != player_client.x
-                        if player.x > player_client.x
-                            player_client.move_right()
-                        else
-                            player_client.move_left()
+                        if player.direction != player_client.direction
+                            case player.direction
+                            when 2
+                                player_client.turn_down()
+                            when 4
+                                player_client.turn_left()
+                            when 6
+                                player_client.turn_right()
+                            when 8
+                                player_client.turn_up()
+                            end
                         end
-                    elsif player.y != player_client.y
-                        if player.y > player_client.y
-                            player_client.move_down()
-                        else
-                            player_client.move_up()
+                        if player.x != player_client.x
+                            if player.x > player_client.x
+                                player_client.move_right()
+                            else
+                                player_client.move_left()
+                            end
+                        elsif player.y != player_client.y
+                            if player.y > player_client.y
+                                player_client.move_down()
+                            else
+                                player_client.move_up()
+                            end
                         end
                     end
                 end
