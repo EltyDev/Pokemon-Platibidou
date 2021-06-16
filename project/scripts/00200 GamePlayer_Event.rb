@@ -1,6 +1,9 @@
 class GamePlayer_Event < Game_Event
 
+    attr_reader :map_id
+
     def initialize(map_id, x, y, graphic_name)
+        @map_id = map_id
         event = RPG::Event.new(x , y)
         event.pages[0].graphic.character_name = graphic_name
         event_id = 1
