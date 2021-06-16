@@ -39,7 +39,7 @@ module Online
                 Thread.main.wakeup
             end
         end
-        sleep unless LOCK.locked?
+        sleep unless LOCK.locked? || !@connected 
     end
 
 
