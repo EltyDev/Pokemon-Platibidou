@@ -97,6 +97,7 @@ module Online
                 if !@players.has_key?(player.uuid)
                     @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
                     $game_map.need_refresh = true
+                    $game_map.refresh
                 else
                     player_client = @players[player.uuid]
                     if player.map_id != player_client.map_id
