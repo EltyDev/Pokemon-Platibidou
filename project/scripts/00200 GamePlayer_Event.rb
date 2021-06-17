@@ -1,4 +1,4 @@
-class GamePlayer_Event < Game_Event
+class GamePlayer_Event < Sprite_Character
 
     attr_reader :map_id
 
@@ -12,6 +12,8 @@ class GamePlayer_Event < Game_Event
         end
         event.id = event_id
         $game_map.events[event_id] = self
-        super(map_id, event)
+        game_event = Game_event.new(map_id, event)
+        super(game_event)
+        
     end
 end
