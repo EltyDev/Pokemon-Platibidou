@@ -96,7 +96,7 @@ module Online
             data[:value].each do |player| 
                 if !@players.has_key?(player.uuid)
                     @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    $scene.spriteset.reload(player.map_id)
+                    $scene.spriteset.reload(zone=player.map_id)
                 else
                     player_client = @players[player.uuid]
                     if player.map_id != player_client.map_id
