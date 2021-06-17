@@ -101,7 +101,7 @@ module Online
                     if player.map_id != player_client.map_id
                         player_client.erase()
                         @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                        $scene.spriteset.update
+                        $scene.spriteset.init_characters
                     end
                     if player.direction != player_client.direction
                         case player.direction
