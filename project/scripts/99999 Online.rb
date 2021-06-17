@@ -25,19 +25,19 @@ module Online
 
     def self.main_loop()
         Thread.new do
-            log_info("Connexion réussi")
-            while @connected
-                LOCK.synchronize do
-                    Thread.main.wakeup
+            LOCK.synchronize do
+                Thread.main.wakeup
+                log_info("Connexion réussi")
+                while @connected
                     @connected = false if @socket.closed?
                     data = self.receive_data()
                     unless data == nil
                         self.handle_data(data)
                     end
-                    Thread.main.wakeup
                 end
+                log_info("Connexion interrompu")
+                Thread.main.wakeup
             end
-            log_info("Connexion interrompu")
         end
         sleep unless LOCK.locked? || !@connected 
     end
@@ -96,9 +96,7 @@ module Online
             data[:value].each do |player| 
                 if !@players.has_key?(player.uuid)
                     @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    $game_temp.player_new_x = $game_player.x
-                    $game_temp.player_new_y = $game_player.y
-                    $game_temp.player_transferring = true   
+                    $game_map.need_refresh = true
                 else
                     player_client = @players[player.uuid]
                     if player.map_id != player_client.map_id
