@@ -1,6 +1,6 @@
 require 'thread'
 require 'socket'
-require_relative 'PlayerClient'
+
 module Online
 
     attr_reader :connected
@@ -17,7 +17,7 @@ module Online
         unless @connected
             @socket = TCPSocket.new(IP,PORT)
             @connected = true
-            @player = PlayerClient.new($pokemon_party.trainer.name, $game_player.x, $game_player.y, $game_player.direction, $game_player.pattern, $game_map.map_id)
+            @player = PlayerClient.new($pokemon_party.trainer.name, $game_player.x, $game_player.y, $game_player.direction, $game_map.map_id)
             self.send_data({"type": "connection", "value": @player})
             self.main_loop()
         end
@@ -79,11 +79,10 @@ module Online
 
     def self.update_position()
         return unless self.has_moved?
-        self.send_data({"type": "update_position", "value": {"x": $game_player.x, "y": $game_player.y, "direction": $game_player.direction, "pattern": $game_player.pattern, "map_id": $game_map.map_id}})
+        self.send_data({"type": "update_position", "value": {"x": $game_player.x, "y": $game_player.y, "direction": $game_player.direction, "map_id": $game_map.map_id}})
         @player.x = $game_player.x
         @player.y = $game_player.y
         @player.direction = $game_player.direction
-        @player.pattern = $game_player.pattern
         if $game_map.map_id != @player.map_id
             @player.map_id = $game_map.map_id
             
@@ -96,7 +95,6 @@ module Online
             data[:value].each do |player| 
                 if !@players.has_key?(player.uuid)
                     @players[player.uuid] = GamePlayer_Event.new(player.map_id, player.x, player.y, "cynthia_hgss")
-                    $scene.spriteset.reload(zone=player.map_id)
                 else
                     player_client = @players[player.uuid]
                     if player.map_id != player_client.map_id

@@ -13,5 +13,6 @@ class GamePlayer_Event < Game_Event
         event.id = event_id
         $game_map.events[event_id] = self
         super(map_id, event)
+        $scene.spriteset.reload(zone=map_id)
     end
 end

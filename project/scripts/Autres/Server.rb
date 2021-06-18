@@ -73,7 +73,6 @@ module Server
             @players[client].x = data[:value][:x]
             @players[client].y = data[:value][:y]
             @players[client].direction = data[:value][:direction]
-            @players[client].pattern = data[:value][:pattern]
             @players[client].map_id = data[:value][:map_id]
             self.update_all_positions()
             self.log("Informations", data[:value].to_s, client)
