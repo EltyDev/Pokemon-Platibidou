@@ -1,0 +1,36 @@
+================================Erreur de script================================
+Message :
+uninitialized constant Online::Concurrent
+
+Type : NameError
+Script : 99999 Haute dépendances/00100 Online/00200 Online.rb (user)
+Ligne : 6
+Date : 19/06/2021 17:04:54
+Game Version : 256
+Logiciel : Pokémon SDK 24.81
+===================================Backtraces===================================
+[23] : 99999 Haute dépendances/00100 Online/00200 Online.rb (user) | ligne 6 <module:Online>
+[22] : 99999 Haute dépendances/00100 Online/00200 Online.rb (user) | ligne 4 <top (required)>
+[21] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[20] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[19] : ScriptLoad.rb (PSDK) | ligne 49 load_scripts
+[18] : ScriptLoad.rb (PSDK) | ligne 46 each
+[17] : ScriptLoad.rb (PSDK) | ligne 46 load_scripts
+[16] : ScriptLoad.rb (PSDK) | ligne 37 load_vscode_scripts
+[15] : ScriptLoad.rb (PSDK) | ligne 38 load_vscode_scripts
+[14] : ScriptLoad.rb (PSDK) | ligne 38 each
+[13] : ScriptLoad.rb (PSDK) | ligne 38 load_vscode_scripts
+[12] : ScriptLoad.rb (PSDK) | ligne 38 load_vscode_scripts
+[11] : ScriptLoad.rb (PSDK) | ligne 38 each
+[10] : ScriptLoad.rb (PSDK) | ligne 38 load_vscode_scripts
+[9] : ScriptLoad.rb (PSDK) | ligne 29 start
+[8] : tools/GameLoader/50_load_game_uncompiled.rb (PSDK) | ligne 7 <top (required)>
+[7] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[6] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[5] : ScriptLoad.rb (PSDK) | ligne 124 load_tool
+[4] : tools/GameLoader/Z_load_uncompiled.rb (PSDK) | ligne 10 <top (required)>
+[3] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[2] : /lib/ruby/2.5.0/rubygems/core_ext/kernel_require.rb (ruby) | ligne 59 require
+[1] : ScriptLoad.rb (PSDK) | ligne 124 load_tool
+[0] : Game.rb (RMXP) | ligne 24 <main>
+===================================Fin du log===================================

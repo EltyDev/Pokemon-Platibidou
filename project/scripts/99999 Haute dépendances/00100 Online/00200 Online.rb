@@ -9,43 +9,44 @@ module Online
     @player = nil
     @socket = nil
     @connected = false
+    @thread
     IP = "83.196.123.232"
     PORT = 8888
-    LOCK = Mutex.new
 
     def self.connect()
         unless @connected
-            @socket = TCPSocket.new(IP,PORT)
+            begin
+                @socket = TCPSocket.new(IP,PORT)
+            rescue
+                log_info("Connexion impossible")
+                return
+            end
             @connected = true
             @player = PlayerClient.new($pokemon_party.trainer.name, $game_player.x, $game_player.y, $game_player.direction, $game_map.map_id)
             self.send_data({"type": "connection", "value": @player})
-            self.main_loop()
+            @thread = self.main_loop
         end
     end
 
     def self.main_loop()
-        Thread.new do
-            LOCK.synchronize do
-                Thread.main.wakeup
-                log_info("Connexion réussi")
-                while @connected
-                    @connected = false if @socket.closed?
-                    data = self.receive_data()
-                    unless data == nil
-                        self.handle_data(data)
-                    end
+        thread = Thread.new do
+            log_info("Connexion réussi")
+            while @connected
+                @connected = false if @socket.closed?
+                data = self.receive_data()
+                unless data == nil
+                    self.handle_data(data)
                 end
-                log_info("Connexion interrompu")
-                Thread.main.wakeup
             end
         end
-        sleep unless LOCK.locked? || !@connected 
+        return thread
     end
 
 
     def self.disconnect()
         @socket.close()
         @connected = false
+        @thread.join
     end
 
 
