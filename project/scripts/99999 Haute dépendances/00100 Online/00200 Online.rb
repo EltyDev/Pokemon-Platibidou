@@ -32,7 +32,6 @@ module Online
         thread = Thread.new do
             log_info("Connexion réussi")
             while @connected
-                @connected = false if @socket.closed?
                 data = self.receive_data()
                 unless data == nil
                     self.handle_data(data)
