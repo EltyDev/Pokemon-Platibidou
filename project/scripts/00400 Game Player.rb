@@ -13,6 +13,7 @@ class Game_Player < Game_Character
 
     def update
         unless @freeze
+            Online.update_position()
             return send(@update_callback) if @update_callback
             last_moving = moving?
             if moving? || $game_system.map_interpreter.running? ||
@@ -31,7 +32,6 @@ class Game_Player < Game_Character
             super
             update_scroll_map(last_real_x, last_real_y)
             update_check_trigger(last_moving) unless moving? || @sliding
-            Online.update_position()
         else
             update_appearance(0)
         end

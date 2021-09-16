@@ -10,6 +10,7 @@ module Server
     @first = true
 
     def self.start()
+        self.log("Information", "Serveur démarré avec succès", nil)
         loop do
             Thread.start(SERVER.accept) do |client|
                 loop do
@@ -56,10 +57,14 @@ module Server
     def self.log(type, message, client)
         puts "―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――" if @first
         @first = false
-        if message == ""
-            puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid
+        if client != nil
+            if message == ""
+                puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid
+            else
+                puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid + " ==> " + message
+            end
         else
-            puts "[" + type + "] " + @players[client].username + ":" + @players[client].uuid + " ==> " + message
+            puts "[" + type + "] " + message
         end
         puts "―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――"
     end

@@ -9,9 +9,9 @@ module Online
     @player = nil
     @socket = nil
     @connected = false
-    @thread
     IP = "83.196.123.232"
     PORT = 8888
+    LOCK = Mutex.new
 
     def self.connect()
         unless @connected
@@ -24,32 +24,36 @@ module Online
             @connected = true
             @player = PlayerClient.new($pokemon_party.trainer.name, $game_player.x, $game_player.y, $game_player.direction, $game_map.map_id)
             self.send_data({"type": "connection", "value": @player})
-            @thread = self.main_loop
+            self.main_loop
         end
     end
 
     def self.main_loop()
         thread = Thread.new do
-            log_info("Connexion réussi")
-            while @connected
-                data = self.receive_data()
-                unless data == nil
-                    self.handle_data(data)
+            LOCK.synchronize do
+                Thread.main.wakeup
+                log_info("Connexion réussi")
+                while @connected
+                    data = self.receive_data()
+                    unless data == nil
+                        self.handle_data(data)
+                    end
                 end
+                thread.join
+                Thread.main.wakeup
             end
         end
-        return thread
     end
 
 
     def self.disconnect()
         @socket.close()
         @connected = false
-        @thread.join
     end
 
 
     def self.send_data(data)
+        log_info("Envoie de données...")
         data = Marshal.dump(data)
         @socket.write([data.bytesize].pack("I") + data)
         return true
@@ -58,6 +62,7 @@ module Online
     end
 
     def self.receive_data()
+        log_info("Récepetion de données...")
         return unless @connected
         size = @socket.recv(4).unpack("I").first
         data = @socket.recv(size)
@@ -85,7 +90,6 @@ module Online
         @player.direction = $game_player.direction
         if $game_map.map_id != @player.map_id
             @player.map_id = $game_map.map_id
-            
         end
     end
 
