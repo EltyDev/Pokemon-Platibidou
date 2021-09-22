@@ -1,5 +1,6 @@
 ================================Erreur de script================================
 Message :
+<<<<<<< Updated upstream
 no implicit conversion from nil to integer
 
 Type : TypeError
@@ -51,6 +52,40 @@ Logiciel : Pokémon SDK 24.81
 [15] : 01400 GamePlay/00201 Scene_Map calling.rb (PSDK) | ligne 33 each
 [14] : 01400 GamePlay/00201 Scene_Map calling.rb (PSDK) | ligne 33 update_scene_calling
 [13] : 01400 GamePlay/00200 Scene_Map.rb (PSDK) | ligne 21 update
+=======
+(eval):1: syntax error, unexpected ')', expecting '}'
+...sh", ability: [92,182,303,261])
+...                              ^
+Eval from script command (EVENT_ID = 1)
+Script:
+add_specific_pokemon({id: 129, level: 5, shiny: true, item: 8, ability: 167, nature: 3, name_given: "Swagging Fish", ability: [92,182,303,261])
+
+
+Type : SyntaxError
+Script : 01100 Yuki/02000 Yuki_ErrorHandler.rb (PSDK)
+Ligne : 30
+Date : 20/09/2021 16:05:52
+Game Version : 256
+Logiciel : Pokémon SDK 24.81
+Script used by eval command : 
+add_specific_pokemon({id: 129, level: 5, shiny: true, item: 8, ability: 167, nature: 3, name_given: "Swagging Fish", ability: [92,182,303,261])
+
+
+===================================Backtraces===================================
+[25] : 01100 Yuki/02000 Yuki_ErrorHandler.rb (PSDK) | ligne 30 error
+[24] : 01100 Yuki/02000 Yuki_ErrorHandler.rb (PSDK) | ligne 74 critical_section
+[23] : 01100 Yuki/02000 Yuki_ErrorHandler.rb (PSDK) | ligne 68 critical_section
+[22] : 00600 Script_RMXP/03000 Interpreter_7.rb (PSDK) | ligne 247 eval_script
+[21] : 00600 Script_RMXP/03000 Interpreter_7.rb (PSDK) | ligne 237 command_355
+[20] : 00600 Script_RMXP/02500 Interpreter_2.rb (PSDK) | ligne 15 execute_command
+[19] : 00600 Script_RMXP/02400 Interpreter_1.rb (PSDK) | ligne 132 update
+[18] : 00600 Script_RMXP/02400 Interpreter_1.rb (PSDK) | ligne 100 loop
+[17] : 00600 Script_RMXP/02400 Interpreter_1.rb (PSDK) | ligne 100 update
+[16] : 01400 GamePlay/00200 Scene_Map.rb (PSDK) | ligne 150 auto_transfert_update
+[15] : 01400 GamePlay/00200 Scene_Map.rb (PSDK) | ligne 147 loop
+[14] : 01400 GamePlay/00200 Scene_Map.rb (PSDK) | ligne 147 auto_transfert_update
+[13] : 01400 GamePlay/00200 Scene_Map.rb (PSDK) | ligne 16 update
+>>>>>>> Stashed changes
 [12] : 01400 GamePlay/00000 GamePlay__Base.rb (PSDK) | ligne 283 main_process
 [11] : 01400 GamePlay/00000 GamePlay__Base.rb (PSDK) | ligne 158 main
 [10] : tools/GameLoader/Z_main.rb (PSDK) | ligne 17 <top (required)>
