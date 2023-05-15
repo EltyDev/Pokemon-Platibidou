@@ -1,0 +1,34 @@
+================================Erreur de script================================
+Message :
+cannot load such file -- C:/Users/Venodez/Desktop/Projets/Pokemon-Platibidou/project/scripts/99999 Haute dépendances/00100 Online/00100 Bouton/00300 MenuButton.rb
+
+Type : LoadError
+Script : ScriptLoad.rb (PSDK)
+Ligne : 88
+Date : 15/05/2023 08:07:27
+Game Version : 256
+Logiciel : Pokémon SDK 26.11
+===================================Backtraces===================================
+[21] : ScriptLoad.rb (PSDK) | ligne 88 require
+[20] : ScriptLoad.rb (PSDK) | ligne 88 load_scripts
+[19] : ScriptLoad.rb (PSDK) | ligne 85 each
+[18] : ScriptLoad.rb (PSDK) | ligne 85 load_scripts
+[17] : ScriptLoad.rb (PSDK) | ligne 76 load_vscode_scripts
+[16] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[15] : ScriptLoad.rb (PSDK) | ligne 77 each
+[14] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[13] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[12] : ScriptLoad.rb (PSDK) | ligne 77 each
+[11] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[10] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[9] : ScriptLoad.rb (PSDK) | ligne 77 each
+[8] : ScriptLoad.rb (PSDK) | ligne 77 load_vscode_scripts
+[7] : ScriptLoad.rb (PSDK) | ligne 42 start
+[6] : tools/GameLoader/50_load_game_uncompiled.rb (PSDK) | ligne 7 <top (required)>
+[5] : ScriptLoad.rb (PSDK) | ligne 190 require
+[4] : ScriptLoad.rb (PSDK) | ligne 190 load_tool
+[3] : tools/GameLoader/Z_load_uncompiled.rb (PSDK) | ligne 14 <top (required)>
+[2] : ScriptLoad.rb (PSDK) | ligne 190 require
+[1] : ScriptLoad.rb (PSDK) | ligne 190 load_tool
+[0] : Game.rb (RMXP) | ligne 11 <main>
+===================================Fin du log===================================

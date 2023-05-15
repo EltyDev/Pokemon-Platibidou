@@ -1,102 +1,22 @@
 [
   {
     "id": 14,
-    "name": "PSDK .25.0"
+    "name": "Platibidou"
   },
   {
     "id": 4,
     "name": "Start"
   },
   {
-    "id": 5,
-    "name": "Centre Pokémon"
-  },
-  {
-    "id": 9,
-    "name": "Village Péhaisse-de-Cas"
+    "id": 1,
+    "name": "Bonaugure (League Of Legends)"
   },
   {
     "id": 2,
-    "name": "Grotte de l'Aissay"
-  },
-  {
-    "id": 6,
-    "name": "Grotte de Glace"
-  },
-  {
-    "id": 7,
-    "name": "Mer"
-  },
-  {
-    "id": 12,
-    "name": "Village nord"
-  },
-  {
-    "id": 13,
-    "name": "Village PSDK Est"
+    "name": "Maison du Héro - 1er étage"
   },
   {
     "id": 3,
-    "name": "Player's House"
-  },
-  {
-    "id": 1,
-    "name": "Forêt de Péhaisse-de-Cas"
-  },
-  {
-    "id": 8,
-    "name": "Buffer"
-  },
-  {
-    "id": 10,
-    "name": "message_test"
-  },
-  {
-    "id": 11,
-    "name": "MAP011"
-  },
-  {
-    "id": 15,
-    "name": "MAP015"
-  },
-  {
-    "id": 16,
-    "name": "MAP016"
-  },
-  {
-    "id": 17,
-    "name": "MAP017"
-  },
-  {
-    "id": 18,
-    "name": "MAP018"
-  },
-  {
-    "id": 19,
-    "name": "MAP019"
-  },
-  {
-    "id": 20,
-    "name": "MAP020"
-  },
-  {
-    "id": 21,
-    "name": "MAP021"
-  },
-  {
-    "id": 22,
-    "name": "MAP022"
-  },
-  {
-    "id": 23,
-    "name": "MAP023"
-  },
-  {
-    "id": 24,
-    "name": "MAP024"
-  },
-  {
-    "id": 25,
-    "name": "MAP025"
+    "name": "Maison du Héro - RDC"
   }
 ]

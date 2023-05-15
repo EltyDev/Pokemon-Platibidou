@@ -21,10 +21,5 @@
       "offset": -3
     }
   ],
-  "westMaps": [
-    {
-      "mapId": 1,
-      "offset": 3
-    }
-  ]
+  "westMaps": []
 }

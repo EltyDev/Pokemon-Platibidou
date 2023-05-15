@@ -1,1 +1,23 @@
-{"id":1,"dbSymbol":"zone_1","klass":"Zone","maps":[3],"worldmaps":[],"panelId":3,"warp":{"x":null,"y":null},"position":{"x":6,"y":14},"isFlyAllowed":false,"isWarpDisallowed":true,"forcedWeather":null,"wildGroups":[]}
+{
+  "klass": "Zone",
+  "id": 1,
+  "dbSymbol": "zone_1",
+  "maps": [
+    2,
+    3
+  ],
+  "worldmaps": [],
+  "panelId": 0,
+  "warp": {
+    "x": null,
+    "y": null
+  },
+  "position": {
+    "x": 6,
+    "y": 14
+  },
+  "isFlyAllowed": false,
+  "isWarpDisallowed": true,
+  "forcedWeather": null,
+  "wildGroups": []
+}
