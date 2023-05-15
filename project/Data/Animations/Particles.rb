@@ -69,7 +69,7 @@ $data[0][:exclamation] = {
   enter: {
     max_counter: 36,
     data: [
-      { file: 'emotions', rect: [0, 0, 16, 16], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 0 },
+      { file: 'emotions', rect: [0, 0, 16, 16], zoom: 1, position: :center_pos, add_z: -1, oy_offset: 0, se_play: 'audio/particles/exclamation'},
       nil, {oy_offset: 2},
       nil, {oy_offset: 4},
       nil, {oy_offset: 8},
@@ -90,14 +90,15 @@ $data[0][:exclamation] = {
   },
   leave: $data[0][2][:leave]
 }
-
+# interrogation emotion particle
+# eval(format(emotion_str, name: 'interrogation', y: 32, x: 0, target: 16, se_play: 'audio/particles/exclamation'))
 # All the existing emotions
 emotion_str = <<-EOEMOTION
 $data[0][:%<name>s] = {
   enter: {
     max_counter: 60,
     data: [
-      { file: "emotions", rect: [%<x>d, %<y>d, 16, 16], zoom: 1, position: :center_pos, oy_offset: 10 },
+      { file: "emotions", rect: [%<x>d, %<y>d, 16, 16], zoom: 1, position: :center_pos, oy_offset: 10, se_play: 'audio/particles/' + :%<name>s.to_s},
       *Array.new(28),
       { rect: [%<target>d, %<y>d, 16, 16] }
     ],

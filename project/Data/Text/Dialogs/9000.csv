@@ -66,9 +66,9 @@ Index,en,fr,de,es,it,kana,ko
 63, type %s, de type %s, type %s, de tipo %s, type %s, type %s, type %s
 64, nature %s, ayant la nature %s, nature %s, con la naturaleza %s, nature %s, nature %s, nature %s
 65, level %d, au niveau %d, level %d, nivel %d, level %d, level %d, level %d
-66, having minimum level %d,d'un niveau minimal de %d, having minimum level %d, con un nivel mínimo de %d, having minimum level %d, having minimum level %d, having minimum level %d
-67, to maximum level %d,à un niveau maximal de %d, to maximum level %d, hasta un nivel máximo de %d, to maximum level %d, to maximum level %d, to maximum level %d
-68, having maximum level %d,d'un niveau maximal de %d, having maximum level %d, teniendo un máximo de %d, having maximum level %d, having maximum level %d, having maximum level %d
+66, having minimum level %d, d'un niveau minimal de %d, having minimum level %d, con un nivel mínimo de %d, having minimum level %d, having minimum level %d, having minimum level %d
+67, to maximum level %d, à un niveau maximal de %d, to maximum level %d, hasta un nivel máximo de %d, to maximum level %d, to maximum level %d, to maximum level %d
+68, having maximum level %d, d'un niveau maximal de %d, having maximum level %d, teniendo un máximo de %d, having maximum level %d, having maximum level %d, having maximum level %d
 69,,,,,,,
 70,Weight: %.2f kg,Poids : %.2f kg,Weight: %.2f kg,Peso: %.2f kg,Weight: %.2f kg,Weight: %.2f kg,Weight: %.2f kg
 71,Height: %.2f m,Taille : %.2f m,Height: %.2f m,Altura: %.2f m,Height: %.2f m,Height: %.2f m,Height: %.2f m

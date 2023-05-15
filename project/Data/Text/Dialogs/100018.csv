@@ -287,7 +287,3 @@ The [VAR 010E(0000)] Grunts sent out a horde of Mightyena!,Les Sbires de la [VAR
 You are challenged by [VAR 010E(0000)] [VAR TRNAME(0001)]!,[VAR 019E(0000)] veulent se battre !,Parte la sfida di [VAR TRNAME(0001)] ([VAR 010E(0000)])!,Eine Herausforderung von: [VAR 010E(0000)] [VAR TRNAME(0001)]!,¡[VAR 019E(0000)] te desafían!,[VAR 010E(0000)] [VAR TRNAME(0001)][VAR 1900(0003)] 승부를 걸어왔다!,[VAR 010E(0000)]の　[VAR TRNAME(0001)]が しょうぶを　しかけてきた！
 You defeated [VAR 010E(0000)] [VAR TRNAME(0001)]!,Vous avez battu [VAR 019E(0000)] !,Hai sconfitto [VAR TRNAME(0001)] ([VAR 010E(0000)])!,Du besiegst [VAR TRNAME(0001)] ([VAR 010E(0000)])!,¡[VAR 019E(0000)] han perdido!,[VAR 010E(0000)] [VAR TRNAME(0001)][VAR 1900(0004)]의 승부에서 이겼다!,[VAR 010E(0000)]の　[VAR TRNAME(0001)]との しょうぶに　かった！
 [~ 287],[~ 287],[~ 287],[~ 287],[~ 287],[~ 287],[~ 287]
-You just got 10 000 miraculously !,10 000 de thunes sont apparus comme par magie dans ta poche !,"","","","",""
-NewText,10 hyper balls et 10 guérisons sont apparus comme par magie dans ta poche !,NewText,NewText,NewText,NewText,NewText
-NewText,Vos poches se remplissent de richesse telle un arabe devant un magasin,NewText,NewText,NewText,NewText,NewText
-NewText,La sainte masterball vous êtes offert en échange de sa vie,NewText,NewText,NewText,NewText,NewText

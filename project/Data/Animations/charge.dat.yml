@@ -4,10 +4,10 @@
   - 0
 - - :copy_bitmap
   - 0
-  - 
+  -
   - true
 - - :set_property
-  - 
+  -
   - - - :visible
       - false
 - - :advance
@@ -161,7 +161,7 @@
   - 0
 - :synchronize
 - - :set_property
-  - 
+  -
   - - - :visible
       - true
 - - :terminate

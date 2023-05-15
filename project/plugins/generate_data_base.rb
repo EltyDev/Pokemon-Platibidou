@@ -121,9 +121,12 @@ EOF
           <td>')
     page << <<-EOF
         <tr>
-          <td class="text-center">#{i}</td>
+          <td class="text-center" rowspan="2">#{i}</td>
           <td><b>#{GameData::Item[i].db_symbol.inspect}</b></td>
           <td>#{names}</td>
+        </tr>
+        <tr>
+          <td colspan="#{texts.size + 1}" class="#{GameData::Item[i].battle_usable ? 'bg-success' : (GameData::Item[i].holdable && !GameData::Item[i].map_usable ? 'bg-info' : '')}">#{texts[0][13][i]}</td>
         </tr>
 EOF
   end
@@ -161,10 +164,13 @@ EOF
           <td>')
     page << <<-EOF
         <tr>
-          <td class="text-center">#{i}</td>
+          <td class="text-center" rowspan="2">#{i}</td>
           <td><b>#{GameData::Skill[i].db_symbol.inspect}</b></td>
           <td><b>#{GameData::Skill[i].be_method}</b></td>
           <td>#{names}</td>
+        </tr>
+        <tr>
+          <td colspan="#{texts.size + 2}">#{texts[0][7][i]}</td>
         </tr>
 EOF
   end
@@ -203,9 +209,12 @@ EOF
           <td>')
     page << <<-EOF
         <tr>
-          <td class="text-center">#{i}</td>
+          <td class="text-center" rowspan="2">#{i}</td>
           <td><b>#{GameData::Abilities.db_symbol(i).inspect}</b></td>
           <td>#{names}</td>
+        </tr>
+        <tr>
+          <td colspan="#{texts.size + 1}">#{texts[0][5][id]}</td>
         </tr>
 EOF
   end

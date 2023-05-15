@@ -1,7 +1,0 @@
----
-- !ruby/object:GameData::Quest
-  id: 0
-  earnings: []
-  primary: false
-  speak_to:
-  - Intello
